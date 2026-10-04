@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Bean Boutique Coffee Shop"
+    >
+    <title>Offers - Bean Boutique</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <div class="logo">
+            Bean <span>Boutique</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="coffee.html">Coffee</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="events.html">Events</a>
+            <a href="cart.html">Cart</a>
+            <a href="offers.html">Offers</a>
+        </nav>
+    </div>
+</header>
+<main>
+<div class="page-banner">
+    <h1>Offers & Subscriptions</h1>
+</div>
+<div class="container">
+    <div class="offer">
+        <h2>20% Off Your First Purchase</h2>
+        <p>
+            Join the Bean Boutique community and enjoy a special
+            discount on your first order.
+        </p>
+        <button class="button" onclick="openOffer()">
+            Claim Offer
+        </button>
+    </div>
+    <br><br>
+    <div class="section-title">
+        <small>COFFEE DELIVERED</small>
+        <h2>Choose your subscription</h2>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <div class="card-content">
+                <h3>Basic</h3>
+                <p>
+                    One coffee delivery each month.
+                </p>
+                <p class="price">$15 / month</p>
+                <button class="button">
+                    Choose Plan
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Classic</h3>
+                <p>
+                    Two coffee deliveries each month.
+                </p>
+                <p class="price">$28 / month</p>
+                <button class="button">
+                    Choose Plan
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Premium</h3>
+                <p>
+                    Two coffees plus a brewing accessory.
+                </p>
+                <p class="price">$40 / month</p>
+                <button class="button">
+                    Choose Plan
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<div id="offerModal" class="modal">
+    <div class="modal-box">
+        <span class="close" onclick="closeOffer()">×</span>
+        <h2>Welcome to Bean Boutique</h2>
+        <p>
+            Sign up to receive 20% off your first purchase.
+        </p>
+        <br>
+        <input
+            class="search"
+            type="email"
+            placeholder="Enter your email"
+        >
+        <button class="button" onclick="closeOffer()">
+            Get My Discount
+        </button>
+    </div>
+</div>
+<footer>
+    <h3>Bean Boutique</h3>
+    <p>Specialty Coffee • Better Brewing • Good Community</p>
+    <p>© 2026 Bean Boutique Coffee Shop</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

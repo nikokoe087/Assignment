@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Bean Boutique Coffee Shop"
+    >
+    <title>Bean Boutique</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <div class="logo">
+            Bean <span>Boutique</span>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="coffee.html">Coffee</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="events.html">Events</a>
+            <a href="cart.html">Cart</a>
+            <a href="offers.html">Offers</a>
+        </nav>
+    </div>
+</header>
+<main>
+<section class="hero">
+    <div class="slide slide-one active">
+    </div>
+    <div class="slide slide-two">
+    </div>
+    <div class="slide slide-three">
+    </div>
+    <div class="hero-content">
+        <span>SPECIALTY COFFEE • FRESHLY ROASTED</span>
+        <h1>
+            Good coffee brings people together.
+        </h1>
+        <p>
+            Discover beautiful coffee, better brewing equipment
+            and memorable experiences at Bean Boutique.
+        </p>
+        <a class="button" href="coffee.html">
+            Explore Our Coffee →
+        </a>
+    </div>
+    <div class="slider-buttons">
+        <button class="dot active" onclick="showSlide(1)"></button>
+        <button class="dot" onclick="showSlide(2)"></button>
+        <button class="dot" onclick="showSlide(3)"></button>
+    </div>
+</section>
+<div class="container">
+    <div class="section-title">
+        <small>WHY BEAN BOUTIQUE</small>
+        <h2>Made for coffee lovers</h2>
+        <p>
+            Everything you need to make your everyday coffee
+            ritual feel special.
+        </p>
+    </div>
+    <div class="features">
+        <div class="feature">
+            <div class="feature-icon">☕</div>
+            <h3>Fresh Beans</h3>
+            <p>
+                Unique blends and single-origin coffees.
+            </p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">⚙️</div>
+            <h3>Better Brewing</h3>
+            <p>
+                Quality equipment and practical tips.
+            </p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">♡</div>
+            <h3>Great Community</h3>
+            <p>
+                Tastings, workshops and coffee events.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="section-title">
+        <small>EXPLORE</small>
+        <h2>Our coffee world</h2>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <img src="images/4.jpg" alt="Coffee beans">
+            <div class="card-content">
+                <h3>Fresh Coffee</h3>
+                <p>
+                    Find a flavour that fits your daily ritual.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/5.jpg" alt="Coffee equipment">
+            <div class="card-content">
+                <h3>Brewing Gear</h3>
+                <p>
+                    Simple tools for a better cup at home.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/6.jpg" alt="Coffee community">
+            <div class="card-content">
+                <h3>Community Events</h3>
+                <p>
+                    Learn, taste and meet fellow coffee lovers.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="section-title">
+        <small>BEHIND THE CUP</small>
+        <h2>Watch our coffee story</h2>
+    </div>
+    <video autoplay muted loop playsinline>
+    <source src="videos/1.mp4" type="video/mp4">
+    </video>
+</div>
+</main>
+<div id="offerModal" class="modal">
+    <div class="modal-box">
+        <span class="close" onclick="closeOffer()">×</span>
+        <h2>Welcome to Bean Boutique</h2>
+        <p>
+            Sign up to receive 20% off your first purchase.
+        </p>
+        <br>
+        <input
+            class="search"
+            type="email"
+            placeholder="Enter your email"
+        >
+        <button class="button" onclick="closeOffer()">
+            Get My Discount
+        </button>
+    </div>
+</div>
+<footer>
+    <h3>Bean Boutique</h3>
+    <p>Specialty Coffee • Better Brewing • Good Community</p>
+    <p>© 2026 Bean Boutique Coffee Shop</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
